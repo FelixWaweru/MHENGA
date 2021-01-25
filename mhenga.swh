@@ -1,0 +1,34 @@
+shughuli PataMethali(nambari) {
+    wacha mamethali = [
+      ["Haba na haba hujaza kibaba", "test1", "unposted"],
+      ["Haba na haba hujaza kibaba", "test2", "posted"]
+    ]
+    
+      wacha methali = mamethali/nambari
+      wacha kiswahili = methali/0
+      wacha english = methali/1
+      wacha hali = methali/2
+
+      kama (hali == "unposted") {
+        andika(kiswahili + "\n" + "Translation: " + english)
+      } au (hali == "posted") {
+        andika("Posted: " + kiswahili + "\n" + "Translation: " + english)
+      } sivyo {
+        andika("Error")
+      }
+  }
+
+  shughuli NambariYoyote(mbegu) {
+    //This implementation makes use of the Linear Congruential Generator
+    //The parameters are to the Numberical Recipes
+    wacha m = 2^32
+    wacha a = 1664525
+    wacha c = 1013904223
+
+    mbegu = (a*mbegu+c)%m
+
+    andika(mbegu)
+  }
+
+  // PataMethali(somaNambari())
+  NambariYoyote(somaNambari())
