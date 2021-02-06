@@ -1,3 +1,6 @@
+#Custom exceptions
+secrets.js
+
 # Logs
 logs
 *.log
