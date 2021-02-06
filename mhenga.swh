@@ -57,7 +57,7 @@ wacha mamethali = [
   ["Chema chajiuza, kibaya chajitembeza.", "A good thing sells itself, a bad thing treads on itself(is hawked)."],
   ["Chombo cha kuzama(kuvunja) hakina usukani(rubani).", "A sunk vessel(damaged) has no rudder(helmsman). What is predestined is inevitable."],
   ["Chovya - chovya yamaliza buyu la asali.", "Constant dripping will empty the gourd of honey."],
-  ["Dalili ya mvua mawingu.", "The sign of rain - clouds ."],
+  ["Dalili ya mvua mawingu.", "The sign of rain - clouds."],
   ["Damu nzito kuliko maji.", "Blood is thicker than water."],
   ["Dau la mnyonge haliendi joshi; likienda joshi ni mungu kupenda.", "The inattentive man's boat does not go straight ahead; if it does it is because god wills it."],
   ["Dawa ya moto ni moto.", "The remedy to fire is fire. Fire must be met with fire."],
@@ -103,7 +103,7 @@ wacha mamethali = [
   ["Kila chombo kwa wimblile.", "Every vessel has its own waves."],
   ["Kila mlango na ufunguo wake.", "Every door has it's own key."],
   ["Kila mtoto na koja lake.", "To every child his own neck ornament."],
-  ["Kila mwamba ngoma ,ngozi huivuta kwake.", "Anyone who streches a skin on a drum, pulls the skin down on his own side."],
+  ["Kila mwamba ngoma, ngozi huivuta kwake.", "Anyone who streches a skin on a drum, pulls the skin down on his own side."],
   ["Kila ndege huruka na mbawa zake.", "Every bird flies with its own wings."],
   ["Kilio huanza mfiwa ndipo wa mbali wakaingia.", "The wailing begins for the deceased in order for those afar to join."],
   ["Kimya kingi kina mshindo mkubwa.", "A long silence has a loud noise (mighty impact)."],
@@ -132,7 +132,7 @@ wacha mamethali = [
   ["Kukopa harusi kulipa matanga.", "Borrowing is like a wedding, repaying is like mourning."],
   ["Kuku havunji yai lake.", "A hen does not break her own eggs."],
   ["Kuku mgeni hakosi kamba mguuni.", "A new fowl always has string around it's legs."],
-  ["Kula kutamu, kulima mavune.", "Eating is sweet , digging is weary."],
+  ["Kula kutamu, kulima mavune.", "Eating is sweet,  digging is weary."],
   ["Kulea mimba si kazi, kazi kulea mwana.", "It is not hard to nurse a pregnency, but it is hard to rear child."],
   ["Kunako matanga kume kufa mtu.", "Where there is mourning someone has died."],
   ["Kunguru mwoga hukimbiza mbawa zake.", "The timid crow withdraws his wings from harm."],
@@ -151,7 +151,7 @@ wacha mamethali = [
   ["Leo ni leo asemayo kesho ni mwongo.", "Today is it and anyone who says it's tomorrow is lying. (Deal with what is happening now and anyone who is trying to delay it till tomorrow is a liar)."],
   ["Liandikwalo ndiyo liwalo.", "That which is written is the way it was(is)."],
   ["Lila na fila hazitangamani.", "Perhaps(good) and actuality(evil) are not compatable."],
-  ["Lipitalo, hupishwa .", "That which we have is cooked."],
+  ["Lipitalo, hupishwa.", "That which we have is cooked."],
   ["Lisemwalo lipo, ikiwa halipo laja.", "That which is under discussion is real, and if it hasn't happened it's on it's way."],
   ["Lisilokuwapo moyoni, halipo machoni.", "That which is not in the heart was not seen. (Out of sight out of mind)"],
   ["Lisilo na mkoma, hujikoma lilo.", "What has no end, will end itself."],
@@ -450,6 +450,7 @@ wacha mamethali = [
   ["Usiyavuke maji usiyoweza kuyaoga.", "Do not cross water that is too deep for wading."]
 ]
 
+// Saging generator
 shughuli PataMethali() {
       // Get & set the saying variables from the list
       wacha nambari = NambariYoyote()
@@ -464,6 +465,7 @@ shughuli PataMethali() {
       rudisha tweet
   }
 
+  // Random number generator
   shughuli NambariYoyote() {
     // Get and set the required variables
     wacha leo = Tarehe()
@@ -504,7 +506,9 @@ shughuli PataMethali() {
     // Remove the decimal values from the result
     mbegu = mbegu - (mbegu%2)
 
+    //return the random number
     rudisha mbegu
   }
 
-  PataMethali(NambariYoyote())
+  // Return a random Saying
+  PataMethali()

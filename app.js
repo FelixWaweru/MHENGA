@@ -1,10 +1,11 @@
 var Twitter = require('twitter');
+var secrets = require('./secrets')
  
 var client = new Twitter({
-  consumer_key: '',
-  consumer_secret: '',
-  access_token_key: '',
-  access_token_secret: ''
+  consumer_key: secrets.consumer_key,
+  consumer_secret: secrets.consumer_secret,
+  access_token_key: secrets.access_token_key,
+  access_token_secret: secrets.access_token_secret
 });
  
 function Mhenga(callback)
@@ -29,18 +30,33 @@ function tweeter(tweet_post)
 {
 	client.post('statuses/update', {status: tweet_post}, function(error, tweet, response){
 			if(error){
-				console.log(tweet_post);
+				console.log(tweet);
 				console.log("Error Posting Tweet");
 			}
 			else{
 				console.log("Tweet: " + tweet_post + "\n");
+				console.log(tweet);
 				console.log("Tweet Posted!");
 			}
 		})
 }
 
-// Function execution
-Mhenga(function(output) {
+  try {
+	// Function execution
+	Mhenga(function(output) {
 	tweeter(output)
 	// console.log(output)
   });
+  }
+  catch (e) {
+	  console.log("Trying different tweet")
+	  // Sleep for a while to change the time
+	  setTimeout(Mhenga(function(output)
+	  {
+		tweeter(output)
+		// console.log(output)
+	  }), 3000);
+  }
+  finally {
+	console.log("Completed");
+  }
