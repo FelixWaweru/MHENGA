@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/FelixWaweru/NodePractice#readme",
   "dependencies": {
+    "canvas": "^2.6.1",
     "kbm-robot": "0.0.4",
+    "suppose": "^0.6.2",
     "swahili-lang": "^0.9.9",
     "twitter": "^1.7.1"
   }
