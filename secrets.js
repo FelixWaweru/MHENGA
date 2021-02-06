@@ -4,7 +4,6 @@ var consumer_secret = '';
 var access_token_key = '';
 var access_token_secret = '';
 
-//Test
 // Export the data to other files
 module.exports.consumer_key = consumer_key;
 module.exports.consumer_secret = consumer_secret;
