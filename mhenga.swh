@@ -447,7 +447,7 @@ wacha mamethali = [
 // Saging generator
 shughuli PataMethali() {
       // Get & set the saying variables from the list
-      wacha nambari = 44
+      wacha nambari = NambariYoyote()
       wacha methali = mamethali/nambari
       wacha kiswahili = methali/0
       wacha english = methali/1
