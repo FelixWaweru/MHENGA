@@ -1,5 +1,9 @@
 #Custom exceptions
 /secrets.js
+/exec.bat
+/log.txt
+/test.py
+/image.png
 
 # Logs
 logs

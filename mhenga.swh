@@ -23,7 +23,6 @@ wacha mamethali = [
   ["Aliyekupa wewe kiti, ndiye alinipa mimi kumbi.", "He who gave you a chair(throne) is the one who gave me a coconut husk. (Do not despise me because of my station in life)"],
   ["Aliyetota, hajui kutota.", "He who has drowned, does not know how to drown. (If you have nothing, you know not poverty)"],
   ["Amani haipatikani ila kwa ncha ya upanga.", "Peace is not possible except by the point of a sword."],
-  ["Amnyimae punda adesi, kampunguzia mashuzi.", "He who withholds lentils from a donkey, reduces the donkey's farts."],
   ["Ana hasira za mkizi.", "He is as angry as a cuttlefish(fish which jump out of the water and land on the boat or beach, killing itself). (Out of the frying pan and into the fire)"],
   ["Anayekataa wengi ni mchawi.", "He who does not like crowds(company) is a sorcerer."],
   ["Anayekuja pasina hodi, huondoka pasina kuaga.", "He who comes without asking to enter, will leave without saying goodby."],
@@ -31,7 +30,6 @@ wacha mamethali = [
   ["Anayetaka hachoki; hata akichoka kishapata.", "He who wants does not tire; when he tires he has what he wants."],
   ["Angeenda juu kipungu, hafikilii mbinguni.", "Even though the hawk flies high, it does not reach heaven."],
   ["Angurumapo simba, mcheza nani?", "Where the lion roars, who will play?"],
-  ["Aninyimae mbuzi kanipunguzia mashuzi.", "He who withholds goat meat from me, reduces my farting."],
   ["Apewaye ndiye aongezwaye.", "He who is given is the one who is given even more."],
   ["Asiyebahati habahatiki(shi).", "He who is unlucky is never lucky."],
   ["Asiyefunzwa na mamaye, hufunzwa na ulimwengu.", "He who is not taught by his mother, is taught by the world."],
@@ -123,7 +121,6 @@ wacha mamethali = [
   ["Kozi mwandada, kulala na njaa kupenda.", "If a Goshawk sleeps hungry it's his own choice."],
   ["Kuambizana kuko kusikilizana hapana.", "Those discussions lead to no agreements."],
   ["Kucha M'ngu si kilemba cheupe.", "The fear of God is not wearing a white turban."],
-  ["Kuchamba kwingi, kuondoka na mavi.", "A lot of farting results in crap."],
   ["Kufa kufaana.", "Death has its advantages too. It benefits those who inherit."],
   ["Kufa kwa jamaa, harusi.", "The result of the death of a relative is a wedding. (Compared to a death of a relative)."],
   ["Kufa kwa mdomo, mate hutawanyika.", "When the mouth dies, it produces spittle. (When the head of the family dies, that family breaks up)."],
@@ -175,8 +172,6 @@ wacha mamethali = [
   ["Masikini akipata matako hulia mbwata.", "When a poor man gets the ass of a carcase he boasts of his new good fortune."],
   ["Masikini haokoti, akiokota huambiwa kaiba.", "A poor man does gather things, if he does he is told he stole them."],
   ["Masikini na mwanawe tajiri na mali yake.", "To a poor man his child and to a rich man his wealth."],
-  ["Mavi usioyala, wayawingiani kuku?", " Dung which isn't eaten, will be eaten by the hens. (Why drive away fowls from the dung you do not eat yourself?)"],
-  ["Mavi ya kale hayanuki.", "Old droppings do not stink."],
   ["Mbinu hufuata mwendo.", "A double jointed arm moves in one motion. (Like father like son)"],
   ["Mbio za sakafuni huishia ukingoni.", "Running on the roof finishes at the edge."],
   ["Mbiu ya mgambo ikilia ina jambo.", "When an buffalo-horn sounds, there is something of importance."],
@@ -351,7 +346,7 @@ wacha mamethali = [
   ["Nta si asali nalikuwa nazo si uchunga.", "Wax is not honey; though I had them I did not keep them."],
   ["Nyani haoni kundule, huliona la mwenziwe.", "The ape does not see his own backside, he only sees his companion's."],
   ["Nyimbo ya kufunzwa haikeshi ngoma.", " (Foreign) Songs which need to be taught do not last at a traditional dance"],
-  ["Nyuki huenda na maua yake.", "A bee are found in flowers."],
+  ["Nyuki huenda na maua yake.", "A bee is found in flowers."],
   ["Nyumba usiyolala ndani huijui ila yake.", "You cannot know the defects of a house you have not slept in. (It is the wearer who knows where the shoe pinches)"],
   ["Nyumba ya udongo haihimili vishindo.", "A mud hut cannot withstand great shocks."],
   ["Nzi kufa juu ya kidonda si haramu.", "For a fly to die on an ulcer is not bad (after all, he got what he wanted)."],
@@ -452,7 +447,7 @@ wacha mamethali = [
 // Saging generator
 shughuli PataMethali() {
       // Get & set the saying variables from the list
-      wacha nambari = NambariYoyote()
+      wacha nambari = 44
       wacha methali = mamethali/nambari
       wacha kiswahili = methali/0
       wacha english = methali/1
