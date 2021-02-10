@@ -1,5 +1,5 @@
 # MHENGA
-An implementation of Swahili and Node JS to create a Twitter Bot that posts Swahili sayings
+An implementation of Swahili-lang and Node JS to create a Twitter Bot that posts Swahili sayings
 
 ![alt text](https://github.com/FelixWaweru/MHENGA/blob/main/Images/khanga.jpg) 
 
