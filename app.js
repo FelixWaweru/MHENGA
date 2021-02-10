@@ -81,7 +81,7 @@ var hourInterval = 6
 	try {
 		// Function execution
 		Mhenga(function(output) {
-		tweeter(output)
+		// tweeter(output)
 		// console.log(output)
 	  });
 	  }
@@ -90,7 +90,7 @@ var hourInterval = 6
 		  // Sleep for a while to change the time
 		  setTimeout(Mhenga(function(output)
 		  {
-			tweeter(output)
+			// tweeter(output)
 			// console.log(output)
 		  }), 3000);
 	  }
