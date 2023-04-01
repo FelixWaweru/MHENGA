@@ -1,6 +1,6 @@
 {
-  "name": "test",
-  "version": "1.0.0",
+  "name": "MHENGA",
+  "version": "1.0.1",
   "description": "",
   "main": "app.js",
   "scripts": {
@@ -8,17 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FelixWaweru/NodePractice.git"
+    "url": "git+https://github.com/FelixWaweru/MHENGA.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/FelixWaweru/NodePractice/issues"
+    "url": "https://github.com/FelixWaweru/MHENGA/issues"
   },
-  "homepage": "https://github.com/FelixWaweru/NodePractice#readme",
+  "homepage": "https://github.com/FelixWaweru/MHENGA#readme",
   "dependencies": {
-    "canvas": "^2.6.1",
+    "dotenv": "^16.0.3",
     "kbm-robot": "0.0.4",
+    "node-cron": "^3.0.2",
     "suppose": "^0.6.2",
     "swahili-lang": "^0.9.9",
     "twitter": "^1.7.1"
